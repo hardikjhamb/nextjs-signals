@@ -1,5 +1,6 @@
 # Node modules
 node_modules/
+.next/
 
 # Optional: Logs and runtime data
 npm-debug.log*

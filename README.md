@@ -12,3 +12,7 @@ To run the project
 
 `npm run dev`
 
+Implementation path
+
+`app/counter.tsx`
+
