@@ -6,9 +6,9 @@ This project demonstrates a simple counter application using signals-react for r
 
 To install the project dependencies, clone the repository and run:
  
-**npm install
+`npm install`
 
 To run the project 
 
-**npm run dev
+`npm run dev`
 
