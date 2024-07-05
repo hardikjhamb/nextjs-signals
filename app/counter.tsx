@@ -1,6 +1,6 @@
 "use client";
 
-import { useSignal, useComputed, useSignalEffect } from '@preact/signals-react';
+import { useSignal, useComputed, useSignalEffect, batch } from '@preact/signals-react';
 
 function Counter() {
     // Define a signal `count` initialized with value 0
@@ -16,7 +16,9 @@ function Counter() {
 
 
     const incrementCount = () => {
-        count.value++; // Increment the value of `count`
+        batch(() => {
+            count.value++; // Increment count within the batch
+        });
     };
 
     return (
